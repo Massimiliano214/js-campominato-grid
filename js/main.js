@@ -8,15 +8,14 @@ gameStart.addEventListener("click",
     }
 );
 
-let numero = listaNumeri();
-
 for (let i = 1; i < 101; i++) {
-    const numeroScelto = listaNumeri();
+    
 
-    const currentSquare = createNewSquare(numeroScelto);
+    let currentSquare = createNewSquare(i);
 
-    currentSquare.addEventListener("click", function() {
-        this.classList.toggle("bg_blue");
+    currentSquare.addEventListener('click', function() {
+        this.classList.toggle('clicked');
+        this.classList.remove("d-flex");
     });
 
     gridDom.append(currentSquare);
@@ -29,14 +28,4 @@ function createNewSquare(numero) {
     currentElement.classList.add("squares");
     currentElement.innerHTML = `<div class="squares d-flex">${numero}</div>`;
     return currentElement;
-}
-
-function listaNumeri() {
-    let squares;
-for(let i = 1; i < 101; i++) {
-    
-    squares = i;
-    console.log("funzione lista " + squares);
-};
-return squares;
 };
