@@ -10,7 +10,8 @@ gameStart.addEventListener("click",
     }
 );
 
-const numeroMax = quadratiDaMettere();
+let numeroMax = 0;
+numeroMax = quadratiDaMettere();
 
 console.log(numeroMax);
 
