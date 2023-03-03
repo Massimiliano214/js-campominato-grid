@@ -51,14 +51,20 @@ footer {
 }
 .containerSquares {
     background-color: black;
-    width: 700px;
+    width: 600px;
+    height: 600px;
     display: flex;
+    /*display: flex;*/
     flex-wrap: wrap;
 }
 
 .squares {
-    width: calc(700px / 10);
-    height: calc(700px / 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(600px / 10);
+    height: calc(600px / 10);
     background-color: bisque;
     border: 2px solid blue;
 }
+
