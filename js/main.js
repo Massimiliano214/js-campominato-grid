@@ -1,4 +1,12 @@
 const gridDom = document.querySelector(".containerSquares");
+let gameStart = document.getElementById("avvioGioco");
+
+gameStart.addEventListener("click",
+    function() {
+     const currentElement = document.querySelector(".mainBottom")
+     currentElement.classList.toggle("containerList")   
+    }
+);
 
 let numero = listaNumeri();
 
