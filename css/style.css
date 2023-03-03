@@ -72,6 +72,6 @@ footer {
     display: flex;
 }
 
-.containerSquares.bg_blue {
-    background-color: blue;
+.clicked {
+    background-color: lightslategrey;
 }

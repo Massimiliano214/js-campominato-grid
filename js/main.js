@@ -14,8 +14,9 @@ for (let i = 1; i < 101; i++) {
     let currentSquare = createNewSquare(i);
 
     currentSquare.addEventListener('click', function() {
-        this.classList.toggle('clicked');
-        this.classList.remove("d-flex");
+        currentSquare.classList.toggle('clicked');
+        currentSquare.classList.remove("d-flex");
+        console.log("la cella selezionata è la seguente: " + i);
     });
 
     gridDom.append(currentSquare);
@@ -26,6 +27,7 @@ for (let i = 1; i < 101; i++) {
 function createNewSquare(numero) {
     const currentElement = document.createElement("div");
     currentElement.classList.add("squares");
-    currentElement.innerHTML = `<div class="squares d-flex">${numero}</div>`;
+    currentElement.classList.add("d-flex");
+    currentElement.innerHTML = `${numero}`;
     return currentElement;
 };
