@@ -71,3 +71,7 @@ footer {
 .containerList {
     display: flex;
 }
+
+.bg_blue {
+    background-color: blue;
+}
