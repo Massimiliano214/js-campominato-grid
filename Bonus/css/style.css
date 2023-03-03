@@ -68,6 +68,26 @@ footer {
     border: 2px solid blue;
 }
 
+.squaresHard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(600px / 7);
+    height: calc(600px / 7);
+    background-color: bisque;
+    border: 2px solid blue;
+}
+
+.squaresMedium {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(600px / 9);
+    height: calc(600px / 9);
+    background-color: bisque;
+    border: 2px solid blue;
+}
+
 .containerList {
     display: flex;
 }

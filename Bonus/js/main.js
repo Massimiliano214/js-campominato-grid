@@ -32,7 +32,14 @@ for (let i = 1; i < numeroMax; i++) {
 
 function createNewSquare(numero) {
     const currentElement = document.createElement("div");
-    currentElement.classList.add("squares");
+
+    if (numeroMax == 101) {
+        currentElement.classList.add("squares");
+    } else if (numeroMax == 82){
+        currentElement.classList.add("squaresMedium");
+    } else {
+        currentElement.classList.add("squaresHard");
+    }
     currentElement.classList.add("d-flex");
     currentElement.innerHTML = `${numero}`;
     return currentElement;
